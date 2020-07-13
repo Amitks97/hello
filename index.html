@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>BrighterBEE Global Advisor</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    
+</head>
+<body class="host_version"> 
+
+    
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header tit-up">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Customer Login</h4>
+			</div>
+			<div class="modal-body customer-box">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+					<li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+					<li><a href="#Registration" data-toggle="tab">Registration</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="Login">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email1" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="exampleInputPassword1" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+										Submit
+									</button>
+									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane" id="Registration">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="mobile" placeholder="Mobile" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="password" placeholder="Password" type="password">
+								</div>
+							</div>
+							<div class="row">							
+								<div class="col-sm-10">
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Save &amp; Continue
+									</button>
+									<button type="button" onclick="location.href='index.html'" class="btn btn-light btn-radius btn-brd grd1">
+										Cancel</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+	
+	<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo2.png" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+						
+						<li class="nav-item"><a class="nav-link" href="advisors.html">Consultants</a></li>
+						<li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log orange" href="#" data-toggle="modal" data-target="#login"><span>Book Now</span></a></li>
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<div id="carouselExampleControls" class="carousel slide bs-slider box-slider" data-ride="carousel"  data-interval="2233300" >
+		<!-- Indicators -->
+		
+		<div class="carousel-inner" role="listbox">
+			<div class="carousel-item active">
+				<div id="home" class="first-section" style="background-image:url('images/msrit.jpg');">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-right">
+									<div class="big-tagline">
+										<h2><strong>BrighterBEE </strong>Global Advisor</h2>
+										<!-- <p class="lead">Something about BrighterBEE..... </p> -->
+											<a href="contact.html" class="hover-btn-new"><span>Contact Us</span></a>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<!-- <a href="#" class="hover-btn-new"><span>Read More</span></a> -->
+									</div>
+								</div>
+							</div><!-- end row -->            
+						</div><!-- end container -->
+					</div>
+				</div><!-- end section -->
+			</div>
+			<div class="carousel-item">
+				<div id="home" class="first-section" style="background-image:url('images/rvce.jpg');">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-left">
+									<div class="big-tagline">
+										<!-- <h2 data-animation="animated zoomInRight">BrighterBEE<strong> Global Advisor</strong></h2>
+										<p class="lead" data-animation="animated fadeInLeft">Small intro #2</p>
+											<a href="contact.html" class="hover-btn-new"><span>Contact Us</span></a>  -->
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+									</div>
+								</div>
+							</div><!-- end row -->            
+						</div><!-- end container -->
+					</div>
+				</div><!-- end section -->
+			</div>
+			<div class="carousel-item">
+				<div id="home" class="first-section" style="background-image:url('images/epic.jpg');">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-center">
+									<div class="big-tagline">
+										<!-- <h2 data-animation="animated zoomInRight"><strong>VPS Servers</strong> Company</h2>
+										<p class="lead" data-animation="animated fadeInLeft">1 IP included with each server 
+											Your Choice of any OS (CentOS, Windows, Debian, Fedora)
+											FREE Reboots</p>
+											<a href="#" class="hover-btn-new"><span>Contact Us</span></a>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <a href="#" class="hover-btn-new"><span>Read More</span></a>
+                                        -->
+									</div>
+								</div>
+							</div><!-- end row -->            
+						</div><!-- end container -->
+					</div>
+				</div><!-- end section -->
+			</div>
+			<!-- Left Control -->
+			<a class="new-effect carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				<!-- <span class="fa fa-angle-left" aria-hidden="true"></span> -->
+				<span class="sr-only">Previous</span>
+			</a>
+
+			<!-- Right Control -->
+			<a class="new-effect carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				<!-- <span class="fa fa-angle-right" aria-hidden="true"></span> -->
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+	
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                    <h3>ABOUT US</h3>
+            </div><!-- end title -->
+        
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <h4>One of the most <b>trusted</b> Company in South India</h4>
+                        <h2>WELCOME TO BRIGHTERBEE GLOBAL ADVISOR.</h2>
+                        <p>BrighterBEE Global Advisor is one of the most trusted Company in South India in the education domain located in Bangalore. Aries Global Advisor has tie ups with more than 500 prominent Indian and international universities and colleges in India, US, UK, Russia, Canada, Europe, Australia, Italy, Dubai and Singapore.</p>
+
+                        <p></p>
+
+                        <!-- <a href="#" class="hover-btn-new orange"><span>Learn More</span></a> -->
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+				
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="images/cons2.jpeg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+			</div>
+			<div class="row align-items-center">
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="images/cons3.png" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+				
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <h2></h2>
+                        <p><b>BrighterBEE Global Advisor</b> is engaged in providing Career Counselling and Global Education solutions to students interested in studying India & abroad and helping them to transform their dreams into reality.</p>
+
+                        <p>We helps students for their Immersion, Internship, Undergraduate, Postgraduate and doctoral programs in the areas of Medical , Management, Engineering, Information Technology, Law, Creative Arts, Liberal Arts, Design.</p>
+
+                        <a href="#" class="hover-btn-new orange"><span>Read More</span></a>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div id="overviews" class="section lb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="section-title row text-center">
+                    <h3>Most Popular Courses</h3>
+            </div>
+            </div><!-- end title -->
+
+            <hr class="invis"> 
+
+            <div class="row"> 
+                <div class="col-lg-3 col-md-6 col-12">
+					<div class="hovereffect">
+						<div class="image-blog">
+							<img src="images/un1.jpg" alt="" class="img-fluid">
+						</div>
+						
+							<div class="overlay">
+								<h2>BAMS</h2>
+								<a class="info" href="#">Read More...</a>
+							</div>
+						
+					</div>
+				</div><!-- end col -->
+
+                <div class="col-lg-3 col-md-6 col-12">
+					<div class="hovereffect">
+						<div class="image-blog">
+							<img src="images/un2.jpg" alt="" class="img-fluid">
+						</div>
+						
+							<div class="overlay">
+								<h2>BDS</h2>
+								<a class="info" href="#">Read More...</a>
+							</div>
+						
+					</div>
+				</div><!-- end col -->	
+				
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="hovereffect">
+						<div class="image-blog">
+							<img src="images/msrit1.jpg" alt="" class="img-fluid">
+						</div>
+						
+							<div class="overlay">
+								<h2>ENGINEERING</h2>
+								<a class="info" href="#">Read More...</a>
+							</div>
+						
+					</div>
+				</div><!-- end col -->
+				
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="hovereffect">
+						<div class="image-blog">
+							<img src="images/un3.png" alt="" class="img-fluid">
+						</div>
+						
+							<div class="overlay">
+								<h2>BHMS</h2>
+								<a class="info" href="#">Read More...</a>
+							</div>
+						
+					</div>
+				</div><!-- end col -->
+            </div><!-- end row -->			
+			
+			<hr class="hr3"> 
+			
+            <div class="row"> 
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="hovereffect">
+						<div class="image-blog">
+							<img src="images/un4.jpg" alt="" class="img-fluid">
+						</div>
+						
+							<div class="overlay">
+								<h2>MDS</h2>
+								<a class="info" href="#">Read More...</a>
+							</div>
+						
+					</div>
+				</div><!-- end col -->
+				
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="hovereffect">
+						<div class="image-blog">
+							<img src="images/un5.jpg" alt="" class="img-fluid">
+						</div>
+						
+							<div class="overlay">
+								<h2>MBBS</h2>
+								<a class="info" href="#">Read More...</a>
+							</div>
+						
+					</div>
+				</div><!-- end col -->
+				
+                <div class="col-lg-3 col-md-6 col-12">
+					<div class="hovereffect">
+						<div class="image-blog">
+							<img src="images/un6.jpg" alt="" class="img-fluid">
+						</div>
+						
+							<div class="overlay">
+								<h2>PHARMACY</h2>
+								<a class="info" href="#">Read More...</a>
+							</div>
+						
+					</div>
+				</div><!-- end col -->
+
+                <div class="col-lg-3 col-md-6 col-12">
+					<div class="hovereffect">
+						<div class="image-blog">
+							<img src="images/un7.jpg" alt="" class="img-fluid">
+						</div>
+						
+							<div class="overlay">
+								<h2>PHYSIOTHERAPY</h2>
+								<a class="info" href="#">Read More...</a>
+							</div>	
+						
+					</div>
+				</div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+<!-- end section -->
+
+        
+
+    <section class="section wb page-section">
+		<div class="container">
+			 <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>Our History</h3>
+                </div>
+            </div><!-- end title -->
+			<div class="timeline">
+				<div class="timeline__wrap">
+					<div class="timeline__items">
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-01">
+								<h2>2018</h2>
+                                <p>2018 work.......</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-02">
+								<h2>2017</h2>
+                                <p>2017 work............</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-03">
+								<h2>2016</h2>
+                                <p>2016 work.........</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-04">
+								<h2>2015</h2>
+                                <p>2015 work............</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-01">
+								<h2>2014</h2>
+                                <p>2014 work..........</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-02">
+								<h2>2013</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+									ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-03">
+								<h2>2012</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+									ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-04">
+								<h2>2010</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus. Lorem
+									ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="section cl">
+		<div class="container">
+			<div class="row text-left stat-wrap">
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i class="flaticon-study"></i></span>
+					<p class="stat_count">1200</p>
+					<h3>Students</h3>
+				</div><!-- end col -->
+
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i class="flaticon-online"></i></span>
+					<p class="stat_count">240</p>
+					<h3>Courses</h3>
+				</div><!-- end col -->
+
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i class="flaticon-years"></i></span>
+					<p class="stat_count">15</p>
+					<h3>Years Completed</h3>
+				</div><!-- end col -->
+			</div><!-- end row -->
+		</div><!-- end container -->
+	</div><!-- end section -->
+
+    <div id="pricing-box" class="section wb">
+        <div class="container">
+			<div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable">
+                        <div class="pricingTable-header">
+                            <span class="heading">
+                                <h3>Gold</h3>
+                            </span>
+                            <span class="price-value">Rs 500</span>
+                        </div>
+
+                        <div class="pricingContent">
+                            <i class="fa fa-adjust"></i>
+                            <ul>
+                                <li>what we offer(in detail)</li>
+                            </ul>
+                        </div><!-- /  CONTENT BOX-->
+
+                        <div class="pricingTable-sign-up">
+                            <a href="#" class="hover-btn-new orange"><span>sign up</span></a>
+                        </div><!-- BUTTON BOX-->
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable pink">
+                        <div class="pricingTable-header">
+                            <span class="heading">
+                                <h3>Diamond</h3>
+                            </span>
+                            <span class="price-value">Rs 1000</span>
+                        </div>
+
+                        <div class="pricingContent">
+                            <i class="fa fa-briefcase"></i>
+                            <ul>
+                                <li>what we offer(in detail)</li>
+                            </ul>
+                        </div><!-- /  CONTENT BOX-->
+
+                        <div class="pricingTable-sign-up">
+                            <a href="#" class="hover-btn-new orange"><span>sign up</span></a>
+                        </div><!-- BUTTON BOX-->
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable orange">
+                        <div class="pricingTable-header">
+                            <span class="heading">
+                                <h3>Platinum</h3>
+                            </span>
+                            <span class="price-value">Rs 4000</span>
+                        </div>
+
+                        <div class="pricingContent">
+                            <i class="fa fa-cube"></i>
+                            <ul>
+                                <li>what we offer(in detail)</li>
+                            </ul>
+                        </div><!-- /  CONTENT BOX-->
+
+                        <div class="pricingTable-sign-up">
+                            <a href="#" class="hover-btn-new orange"><span>sign up</span></a>
+                        </div><!-- BUTTON BOX-->
+                    </div>
+                </div>
+            </div>
+		</div>
+    </div><!-- end section -->
+
+    <div id="testimonials" class="parallax section db parallax-off" style="background-image:url('images/parallax_04.jpg');">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Testimonials</h3>
+                <p>what our customers say about us</p>
+            </div><!-- end title -->
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="testi-carousel owl-carousel owl-theme">
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                <img style= "height: 100%; border-radius: 50%; "   src="images/man1.jpg" alt="" class="img-fluid">
+                                <h4>Jagdish Yadav </h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
+                                <p class="lead">The people are very helpful</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                <img src="images/testi_02.png" alt="" class="img-fluid">
+                                <h4>Jagdish Yadav </h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
+                                <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                <img src="images/testi_01.png" alt="" class="img-fluid ">
+                                <h4>Jagdish Yadav </h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
+                                <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        
+                    </div><!-- end carousel -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+
+    
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>About US</h3>
+                        </div>
+                        <p style="text-align: justify;"> Brighter BEEGlobal Advisor is one of the most trusted Company in South India in the education domain located in Bangalore. Aries Global Advisor has tie ups with more than 500 prominent Indian and international universities and colleges in India, US, UK, Russia, Canada, Europe, Australia, Italy, Dubai and Singapore.</p>   
+						<div class="footer-right">
+							<ul class="footer-links-soi">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-telegram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+							</ul><!-- end links -->
+						</div>						
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+				<div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Information Link</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#"><b style="color: rgb(103, 247, 151);">Mail</b>: director@brighterbee.in</a></li>
+                            <li>Monday - friday : 8:00 AM to 7:00 Pm</li>
+                            <li>RMV 2nd Stage Bengaluru, Karnataka</li>
+                            <li>1-012-345-6789</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">                   
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2020 <a href="#">BrighterBEE</p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/timeline.min.js"></script>
+    <script>
+        $('.carousel').carousel({
+        pause: "false"
+        });
+    </script>
+	<script>
+		timeline(document.querySelectorAll('.timeline'), {
+			forceVerticalMode: 700,
+			mode: 'horizontal',
+			verticalStartPosition: 'left',
+			visibleItems: 4
+		});
+    </script>
+    
+</body>
+</html>
